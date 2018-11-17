@@ -4,10 +4,39 @@ body {
     justify-content: center;
 }
 
+.get-btn {
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.get-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
 .cart-container {
-    background-color: 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgba(0,0,0, .7);
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px;
 }
 
 .item-container {
-    background-color:
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+    color: white;
 }

@@ -2,12 +2,12 @@
 
 const cart = {
     template:`
-    <button class="get-btn" ng-click="$ctrl.getAllItems();">Get Items</button>
     <section class="cart-container">
+    <button class="get-btn" ng-click="$ctrl.getAllItems();">Get cart Items</button>
     <section class="item-container" ng-repeat="item in $ctrl.cartItems">
-    <p>{{item.product}}</p>
-    <p>{{item.price}}</p>
-    <p>{{item.quantity}}</p>
+    <p>Item: {{item.product}}</p>
+    <p>Price: {{item.price | currency}}</p>
+    <p>Qty: {{item.quantity}}</p>
     </section>
     </section>
     `,
