@@ -1,0 +1,23 @@
+<section class="main-container">
+<form class="form-container" ng-submit="$ctrl.addItem($ctrl.item);">
+    <label class="form-label">Product:</label>
+    <input class="form-product-input" type="text" ng-model="$ctrl.item.product">
+    <label class="form-label">Price:</label>
+    <input class="form-input" type="text" ng-model="$ctrl.item.price">
+    <label class="form-label">Quantity:</label>
+    <input class="form-input" type="text" ng-model="$ctrl.item.quantity">
+    <button class="add-btn">Add To Cart</button>
+</form>
+
+<section class="cart-container" ng-repeat="item in $ctrl.cartItems">
+    <button class="delete-btn" ng-click="$ctrl.removeItem(item.id)">X</button>
+    <section class="item-container">
+        <p class="product-label">{{item.product}}</p>
+        <p class="price-label">Price: {{item.price | currency}}</p>
+        <section class="qty-container">
+            <span class="qty-label">Qty:</span>
+            <input class="qty-input" type="text" ng-blur="$ctrl.updateItem(item);" ng-model="item.quantity">
+        </section>
+    </section>
+</section>
+</section>

@@ -1,42 +1,110 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    background: linear-gradient(to bottom right, #889696, #B8BDB5);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
-.get-btn {
-    border: 1px solid white;
+.main-container {
     width: 100%;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 5px 0;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 5px 0;
 }
 
-.get-btn:hover {
-    background-color: rgba(255, 255, 255, .2);
+.form-container {
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.form-label {
+    font-size: 20px;
+    color: white;  
+}
+
+.form-product-input {
+    padding: 10px;
+    background-color: rgba(246, 245, 239, .2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 25%;
+}
+
+.form-input {
+    padding: 10px;
+    background-color: rgba(246, 245, 239, .2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 8%;
+}
+
+.add-btn {
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.add-btn:hover {
+    background-color: rgba(246, 245, 239, .2);
+    cursor: pointer;
 }
 
 .cart-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: rgba(0,0,0, .7);
-    border-radius: 5px;
-    width: 500px;
+    position: relative;
+    background-color: rgba(246, 245, 239, .2);
+    border-bottom: 1px solid #889696;
+    width: 70%;
     padding: 10px;
+    margin: auto;
 }
 
-.item-container {
-    background-color: rgba(255, 255, 255, .2);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-}
-
-p {
+.product-label {
     color: white;
+    margin: 0 0 5px 0;
+    font-size: 35px;
+}
+
+.price-label {
+    color: white;
+    margin: 0 0 2px 0;
+    
+}
+
+.qty-label {
+    color: white;
+    margin: 0;
+}
+
+.qty-input {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 2%;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    font-size: 15px;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
 }
